@@ -1,0 +1,116 @@
+:host {
+  display: grid;
+  background-color: rgb(27, 27, 27);
+  overflow-y: auto;
+
+  height: 100dvh;
+  min-height: 0;
+
+  gap: 3rem;
+
+  padding: 1.5rem;
+
+  * {
+    color: whitesmoke;
+  }
+
+  a {
+    color: blue;
+  }
+}
+
+section {
+  border: 2px solid whitesmoke;
+  border-radius: 1rem;
+  padding: 2rem;
+
+  background-color: rgb(78, 78, 78);
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 100;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 500;
+  margin: 4rem 0;
+
+  code {
+    font-size: 3rem;
+    font-weight: 100;
+    background-color: rgb(117, 117, 117);
+    padding: 2rem;
+    border-radius: 1rem;
+  }
+}
+
+h3 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.example-3 {
+  border: 2px solid whitesmoke;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  padding: 2rem;
+}
+
+/*===============================================
+:is()
+===============================================*/
+/* .example-1 h3,
+.example-1 h4 {
+  color: rgb(255, 150, 150);
+} */
+
+// specificity of .header applies to all h3, h4, a, and .header
+// :is has a higher specificity
+.example-1 :is(h3, h4, a, .header) {
+  color: rgb(255, 150, 150);
+}
+
+.example-1 h3 {
+  color: red;
+}
+
+.example-1 a:is(:hover, :focus) {
+  color: rgb(98, 0, 255);
+}
+/*===============================================
+:where() - same as :is() but with no specificity
+===============================================*/
+.example-2 h4.header {
+  color: rgb(0, 225, 255);
+}
+
+.example-2 :where(h3, h4, a, .header) {
+  color: rgb(255, 0, 0);
+}
+
+/* :where(h3, h4, a, .header) {
+  color: rgb(255, 0, 0);
+} */
+/*===============================================
+:has() - most powerful selector
+===============================================*/
+.example-3:has(img) {
+  background: bisque;
+  color: black !important;
+}
+
+.example-3:not(:has(img)) {
+  background: gold;
+}
+
+.example-3:has(img) > p {
+  background: firebrick;
+  color: black !important;
+}

@@ -1,1 +1,50 @@
-<p>is-where-has works!</p>
+<h1>:is :where :has Selectors</h1>
+<section class="is">
+    <h2>
+        <code>:is()</code>
+    </h2>
+    <p>This pseudo-class allows us to simplify groupings of selectors</p>
+    <div class="example-1">
+        <h3>An example</h3>
+        <p>Lorem ipsum dolor <a href="#">sit amet consectetur</a> , adipiscing elit. Minima, quam.</p>
+        <h4 class="header">Dolor sit amet.</h4>
+        <p>A quo necessitatibus iste obcaecati id minima ut ex soluta.</p>
+        <p>Soluta earum adipisci, culpa molestias itaque dolor illo eum tenetur?</p>
+        <p>Voluptas, veritatis? Quas voluptate autem, omnis suscipit pariatur repellat in.</p>
+    </div>
+</section>
+
+<section class="where">
+    <h2>
+        <code>:where()</code>
+    </h2>
+    <p>This pseudo-class almost the same as :is selector but with 0 specificity</p>
+    <div class="example-2">
+        <h3>An example</h3>
+        <p>Lorem ipsum dolor <a href="#">sit amet consectetur</a> , adipiscing elit. Minima, quam.</p>
+        <h4 class="header">Dolor sit amet.</h4>
+        <p>A quo necessitatibus iste obcaecati id minima ut ex soluta.</p>
+        <p>Soluta earum adipisci, culpa molestias itaque dolor illo eum tenetur?</p>
+        <p>Voluptas, veritatis? Quas voluptate autem, omnis suscipit pariatur repellat in.</p>
+    </div>
+</section>
+
+<section class="has">
+    <h2>
+        <code>:has()</code>
+    </h2>
+    <p>This pseudo-class is like the parent selector</p>
+    <p>People had been long asking ofr a parent selectors</p>
+    <p>There are other usefule ones as well though, such as:</p>
+    <div class="example-3">
+        <a href="#">Link 1</a>
+        <p>Some descriptive text about the link</p>
+        <img src="https://picsum.photos/200/300" alt="random image">
+        <p>Some more descriptive text about the link</p>
+    </div>
+    <div class="example-3">
+        <a href="#">Link 2 with no img</a>
+        <p>Some descriptive text about the link</p>
+        <p>Some more descriptive text about the link</p>
+    </div>
+</section>

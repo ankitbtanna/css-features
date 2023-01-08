@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'css-features-cssgrid',
-  templateUrl: './cssgrid.component.html',
-  styleUrls: ['./cssgrid.component.scss'],
+  templateUrl: './css-grid.component.html',
+  styleUrls: ['./css-grid.component.scss'],
 })
 export class CSSGridComponent {}

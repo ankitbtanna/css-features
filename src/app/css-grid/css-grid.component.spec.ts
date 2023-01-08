@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CSSGridComponent } from './cssgrid.component';
+import { CSSGridComponent } from './css-grid.component';
 
 describe('CSSGridComponent', () => {
   let component: CSSGridComponent;

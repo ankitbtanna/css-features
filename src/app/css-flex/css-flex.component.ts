@@ -5,4 +5,4 @@ import { Component } from '@angular/core';
   templateUrl: './css-flex.component.html',
   styleUrls: ['./css-flex.component.scss'],
 })
-export class CssFlexComponent {}
+export class CSSFlexComponent {}

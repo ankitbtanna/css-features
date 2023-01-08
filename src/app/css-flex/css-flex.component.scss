@@ -1,0 +1,160 @@
+:host {
+  --border-width: 0.5rem;
+
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow-x: scroll;
+}
+
+/* Visualize */
+.nav-list {
+  border: var(--border-width) solid orange;
+
+  overflow-y: auto;
+
+  li {
+    border: var(--border-width) solid green;
+  }
+}
+
+.nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-list li {
+  /* flex-grow: 1;
+  flex-shrink: 1; */
+}
+
+/* .nav-list li:first-child {
+  flex-grow: 3;
+  flex-shrink: 1;
+} */
+
+/*
+nav-list - flext container
+li - flex item
+
+li is usually a block element, but we want it to be a flex item.
+A block element takes up the entire width of its parent container. It also takes one full line.
+A flex item takes up the width of its content. It can be as wide as it wants to be.
+A flex item can get as small as possible as long as it can show its content in one line.
+- intrinsic width property: width: max-content; width:
+
+If li (flex-item) is inside a flex container and we try to change it to display block or inline, there would be no impact of it on the style of li.
+
+- flex-item
+By default, flex-item wraps the content as you shrink the browser window. It will overflow only once it reaches the minimum width of all the flex-items.
+flex-shrink: 1 --> allows you to wrap flex-items
+flex-shrink: 0 --> prevents you from wrapping flex-items
+
+gap: 1rem; --> gap between flex-items, its a new property
+
+flex-grow: 1; --> allows you to grow flex-items
+flex-grow: 0; --> prevents you from growing flex-items. By default, flex-grow is 0.
+flex-grow: 2; --> allows you to grow flex-items twice as much as the other flex-items (for e.g. li:first-child wants twice as much as the remaining space)
+If grow is not mentioned, it takes the ideal size the container of the content must be.
+
+flex-wrap: wrap; --> allows you to wrap flex-items
+flex-wrap: nowrap; --> prevents you from wrapping flex-items. By default, flex-wrap is nowrap.
+Each row: It looks at each row as separate flex row. It will wrap the flex-items in each row. If last row has a single flex-item it will take up the entire width of the flex container.
+
+Only direct children of flex container can be flex items. If you have a nested flex container, the flex items of the nested flex container will not be flex items of the parent flex container.
+*/
+
+.columns {
+  display: flex;
+  gap: 2rem;
+
+  width: 80rem;
+  border: var(--border-width) solid brown;
+
+  /*  overflow-y: auto;
+  scroll-snap-type: x mandatory; */
+
+  & > * {
+    flex: 1;
+    /* 
+    flex-grow: 1;
+    flex-shrink: 1; 
+    flex-basis: 0
+    */
+    /* flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 0; */
+
+    /* flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 0; */
+
+    /* flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0; */
+
+    /* flex-shrink: 0;
+    flex-basis: 100%;
+    scroll-snap-align: start; */
+  }
+}
+
+/* 
+Columns are not of same size. Because it calculates the ideal size for the content to fit.
+
+flex:1 makes the columns equal. Why does this happen? It is important knowing what flex:1 is doing.
+flex-grow: 1;
+flex-shring: 1;
+flex-basis: 0
+
+We can think of flex basis as width.
+flex-basis: auto; Default value of flex-basis is auto;
+flex-basis: 300px ---> sets all flex-items to 300px wide
+flex-basis: 0px is not possible. It looks as width property. 
+*/
+
+.nav-list {
+  flex-direction: row;
+  justify-content: center;
+}
+
+/*
+flex-direction: row means the main-axis is the row (left-right)
+flex-direction: column meanss the main-axis is the column (top-bottom)
+
+Switching between flex-direction: row and column comes in handy when you want to do responsive web development. I.e. media query
+
+Parent needs to have available space to be distributed to allow justify-content to work.
+*/
+
+.columns {
+  align-items: flex-start;
+}
+
+.card:nth-child(2) {
+  background: pink;
+  align-self: flex-end;
+}
+
+h1 {
+  color: orangered;
+  font-size: 5rem;
+}
+
+h2 {
+  color: orangered;
+  font-size: 3rem;
+}
+
+.card {
+  background: rgb(87, 184, 87);
+
+  h3 {
+    font-weight: bold;
+  }
+}

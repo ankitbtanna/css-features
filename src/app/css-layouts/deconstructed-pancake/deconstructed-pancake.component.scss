@@ -1,0 +1,22 @@
+:host {
+  display: flex;
+  gap: 2rem;
+
+  flex-wrap: wrap;
+  justify-content: center;
+
+  height: 100%;
+  border: 1px solid palegreen;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex: 1 1 150px;
+  /* flex: 0 1 150px; */
+
+  background-color: palegreen;
+  border: 2rem;
+}

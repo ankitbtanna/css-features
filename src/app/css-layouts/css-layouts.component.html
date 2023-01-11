@@ -7,5 +7,7 @@
 <div class="content">
     <ng-container [ngSwitch]="activeLayout">
         <css-features-center-layout *ngSwitchCase="'center-layout'"></css-features-center-layout>
+        <css-features-deconstructed-pancake
+            *ngSwitchCase="'deconstructed-pancake'"></css-features-deconstructed-pancake>
     </ng-container>
 </div>

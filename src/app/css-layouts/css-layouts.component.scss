@@ -2,7 +2,7 @@
   display: grid;
   border: 5px solid red;
   height: 100%;
-  grid-template-columns: 1fr 5fr;
+  grid-template-columns: minmax(200px, 25%) 5fr;
   grid-template-areas: 'layouts content';
 }
 

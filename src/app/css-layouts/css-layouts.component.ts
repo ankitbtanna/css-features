@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class CSSLayoutsComponent {
   activeLayout = 'center-layout';
 
-  layouts = ['center-layout', 'deconstructed-pancake'];
+  layouts = ['center-layout', 'deconstructed-pancake', 'sidebar-says'];
 
   setActiveLayout(layout: string) {
     this.activeLayout = layout;

@@ -9,6 +9,7 @@ import { IsWhereHasComponent } from './is-where-has/is-where-has.component';
 import { NgModule } from '@angular/core';
 import { CenterLayoutComponent } from './css-layouts/center-layout/center-layout.component';
 import { DeconstructedPancakeComponent } from './css-layouts/deconstructed-pancake/deconstructed-pancake.component';
+import { SidebarSaysComponent } from './css-layouts/sidebar-says/sidebar-says.component';
 
 const routes: Routes = [
   { path: 'is-where-has', component: IsWhereHasComponent },
@@ -25,6 +26,7 @@ const routes: Routes = [
     CSSLayoutsComponent,
     CenterLayoutComponent,
     DeconstructedPancakeComponent,
+    SidebarSaysComponent,
   ],
   imports: [BrowserModule, RouterModule.forRoot(routes)],
   providers: [],

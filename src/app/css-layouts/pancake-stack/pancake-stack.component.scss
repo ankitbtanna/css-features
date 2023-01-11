@@ -1,0 +1,37 @@
+:host {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+
+  height: 100%;
+  border: 1px solid orangered;
+}
+
+section {
+  border: 1px solid blue;
+
+  display: grid;
+  place-items: center;
+
+  font-size: 5rem;
+}
+
+.header {
+  background-color: aqua;
+}
+
+.content {
+  background-color: rgb(254, 172, 71);
+  display: flex;
+  min-height: 0;
+
+  div {
+    display: flex;
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+  }
+}
+
+.footer {
+  background-color: violet;
+}

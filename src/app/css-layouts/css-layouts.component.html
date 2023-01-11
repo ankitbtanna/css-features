@@ -1,0 +1,11 @@
+<nav class="layouts">
+    <ul>
+        <li (click)="setActiveLayout(layout)" [ngClass]="{'active':activeLayout===layout}"
+            *ngFor="let layout of layouts">{{layout}}</li>
+    </ul>
+</nav>
+<div class="content">
+    <ng-container [ngSwitch]="activeLayout">
+        <css-features-center-layout *ngSwitchCase="'center-layout'"></css-features-center-layout>
+    </ng-container>
+</div>

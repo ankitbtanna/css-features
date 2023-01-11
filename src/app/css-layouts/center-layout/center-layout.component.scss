@@ -1,0 +1,14 @@
+:host {
+  display: grid;
+  border: 1px solid fuchsia;
+  height: 100%;
+
+  place-items: center;
+}
+
+div.item {
+  background-color: aliceblue;
+  font-size: 6rem;
+  padding: 2rem;
+  border-radius: 1rem;
+}

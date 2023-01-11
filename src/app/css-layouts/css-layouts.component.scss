@@ -1,0 +1,45 @@
+:host {
+  display: grid;
+  border: 5px solid red;
+  height: 100%;
+  grid-template-columns: 1fr 5fr;
+  grid-template-areas: 'layouts content';
+}
+
+.layouts {
+  grid-area: layouts;
+  border: 1px solid green;
+}
+
+.content {
+  grid-area: content;
+  border: 1px solid blue;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: rgb(248, 222, 188);
+
+  ul {
+    list-style: none;
+
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 3rem;
+      border: 1px solid firebrick;
+
+      &.active {
+        background-color: rgb(255, 182, 182);
+      }
+
+      &:hover {
+        cursor: pointer;
+        background-color: rgb(255, 182, 182);
+      }
+    }
+  }
+}

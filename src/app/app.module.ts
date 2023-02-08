@@ -11,12 +11,14 @@ import { CenterLayoutComponent } from './css-layouts/center-layout/center-layout
 import { DeconstructedPancakeComponent } from './css-layouts/deconstructed-pancake/deconstructed-pancake.component';
 import { SidebarSaysComponent } from './css-layouts/sidebar-says/sidebar-says.component';
 import { PancakeStackComponent } from './css-layouts/pancake-stack/pancake-stack.component';
+import { SemanticCssComponent } from './semantic-css/semantic-css.component';
 
 const routes: Routes = [
   { path: 'is-where-has', component: IsWhereHasComponent },
   { path: 'css-grid', component: CSSGridComponent },
   { path: 'css-flex', component: CSSFlexComponent },
   { path: 'css-layouts', component: CSSLayoutsComponent },
+  { path: 'semantic-css', component: SemanticCssComponent },
 ];
 @NgModule({
   declarations: [
@@ -29,6 +31,7 @@ const routes: Routes = [
     DeconstructedPancakeComponent,
     SidebarSaysComponent,
     PancakeStackComponent,
+    SemanticCssComponent,
   ],
   imports: [BrowserModule, RouterModule.forRoot(routes)],
   providers: [],

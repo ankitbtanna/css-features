@@ -1,0 +1,62 @@
+.app-nav {
+  background: #eee;
+  border-top: 1px solid #bbb;
+  border-bottom: 1px solid #bbb;
+  text-align: center;
+
+  ul {
+    display: flex;
+    flex-flow: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    border-right: 1px solid #bbb;
+    flex-grow: 1;
+
+    &:first-child {
+      border-left: 1px solid #bbb;
+    }
+  }
+
+  a {
+    color: #222;
+    display: block;
+    padding: 0.5em 1em;
+    position: relative;
+    text-decoration: none;
+
+    &:after {
+      background: #000;
+      content: '';
+      left: 0;
+      right: 0;
+      height: 0px;
+      bottom: 0;
+      position: absolute;
+      transition: height 0.2s ease-in-out;
+    }
+
+    &:hover,
+    &:focus {
+      &:after {
+        height: 4px;
+      }
+    }
+
+    &.is-active,
+    &[aria-current='page'] {
+      background: #333;
+      color: #fff;
+
+      &:hover,
+      &:focus {
+        &:after {
+          background: #fff;
+        }
+      }
+    }
+  }
+}

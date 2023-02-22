@@ -74,6 +74,8 @@ Block axis is the main flow of the website and inline is the way we read. For ex
 Traditional Japanese website is 90 degrees rotated. So, inline axis is top to bottom.
 [Traditional Japanese website](https://huijing.github.io/zh-type/)
 
+For controlling the _Block Axis_:
+
 There is a CSS property called `writing-mode` whose default value is `horizontal-tb`. It is used to change the direction of the inline axis. It can be changed to `vertical-rl` or `vertical-lr` to change the direction of the inline axis.
 
 ## Normal website
@@ -87,3 +89,18 @@ There is a CSS property called `writing-mode` whose default value is `horizontal
 ## Traditional Mongolian website
 
 ![image](/src/assets/4.png)
+
+For controlling the _Inline Axis_:
+
+There is a CSS property called `direction` whose default value is `ltr`. It is used to change the direction of the inline axis. It can be changed to `rtl` to change the direction of the inline axis.
+
+![image](/src/assets/5.png)
+
+We've been living in old physical properties:
+![image](/src/assets/6.png)
+
+But now we have logical properties, i.e. the axis of the website: block axis and inline axis.
+![image](/src/assets/7.png)
+
+Traditional Japanese website will rotate this axis by 90 degrees.
+![image](/src/assets/8.png)

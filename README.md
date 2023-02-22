@@ -104,3 +104,28 @@ But now we have logical properties, i.e. the axis of the website: block axis and
 
 Traditional Japanese website will rotate this axis by 90 degrees.
 ![image](/src/assets/8.png)
+
+Instead of creating website that goes from left to right, we can create website that goes from top to bottom.
+
+We need to update our thinking when we are dealing with logical properties.
+
+- `top --> block-start`
+- `bottom --> block-end`
+- `left --> inline-start`
+- `right --> inline-end`
+
+![image](/src/assets/9.png)
+
+In similar way, all the box model properties are updated to logical properties.
+![image](/src/assets/10.png)
+
+For width and height, we can use `block-size` and `inline-size`.
+![image](/src/assets/11.png)
+
+This means that we now have a new box model using the CSS logical properties.
+![image](/src/assets/12.png)
+
+We also have `position` attribute in CSS.
+![image](/src/assets/13.png)
+
+Instead of 1 word properties, we now have 3 word properties. Just like `margin` shorthand, we have `inset` shorthand.

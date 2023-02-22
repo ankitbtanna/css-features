@@ -54,3 +54,17 @@ The main thing I want you to take away from all of this is that if you are only 
 You need to be using the appropriate elements (<button></button>s are your friend!), and managing the appropriate attributes and their values to make truly accessible user experiences. Sure, you could to do those things and continue to toggle stateful classes to control your styling. But if we have to update attributes and their values, and those are also valid CSS selectors, then why would we do more work than needed by toggling classes too?
 
 ---
+
+# Logical CSS properties
+
+- To support different type of languages using CSS
+- Some languages may not use margin-left
+
+Before we begin with CSS logical properties, let us understand the main flow of the website. Its all about axis
+There are 2 axis in a website:
+
+1. Block Axis (top to bottom)
+2. Inline Axis (left to right)
+
+[Read more](https://www.geeksforgeeks.org/css-logical-properties/)
+![image]('./src/assets/1.png')

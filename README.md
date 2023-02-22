@@ -129,3 +129,48 @@ We also have `position` attribute in CSS.
 ![image](/src/assets/13.png)
 
 Instead of 1 word properties, we now have 3 word properties. Just like `margin` shorthand, we have `inset` shorthand.
+![image](/src/assets/14.png)
+
+More useful properties:
+![image](/src/assets/15.png)
+
+You can chose to use both old and new properties. But it is recommended to use only logical properties.
+
+CSS flexbox is already using logical properties.
+![image](/src/assets/16.png)
+
+CSS grid is also using logical properties.
+![image](/src/assets/17.png)
+
+So how do we translate old physical properties to logical properties?
+![image](/src/assets/18.png)
+
+How do we test if our website is using logical properties?
+![image](/src/assets/19.png)
+
+[Try CodePen](https://www.geeksforgeeks.org/css-logical-properties/)
+
+---
+
+[Slides](https://docs.google.com/presentation/d/1rRYSh3Bzzlo0Sdoyk4qrKv3RqfruF4ac-H4IkvRH_J0/edit#slide=id.g33b8a566a1_2_27)
+
+## Problems
+
+- Shorthands are a problem. If you use shorthand, it will by default take it as a physical property rather than logical property. So you need to use all the properties as a separate property.
+  W3C is working on this problem. They are trying to make it so that if you use shorthand, it will automatically take it as a logical property.
+  `margin: 10px 20px 30px 40px;` _Physical properties_
+  `margin: logical 10px 20px 30px 40px;` _Logical properties_
+
+Other possible solution to be declared in root elememnt:
+`flow-mode: logical OR physical;`
+
+- Logical properties are not working in media queries. So, if you want to use logical properties in media queries, you need to use physical properties.
+  ![image](/src/assets/20.png)
+  There are only specific properties allowed to be written in brackets of media queries. Logical properties are not allowed currently.
+
+## Browser support
+
+- Logical properties are supported quite well
+- Block model properties are supported in all browsers
+- Floats/Position/Resize - not supported in all browsers. Only supported in Firefox and Chrome. Do check MDN for current status.
+  [Read Here](https://drafts.csswg.org/css-logical/)

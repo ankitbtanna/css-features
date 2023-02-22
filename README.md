@@ -68,3 +68,22 @@ There are 2 axis in a website:
 
 [Read more](https://www.geeksforgeeks.org/css-logical-properties/)
 ![image](/src/assets/1.png)
+
+Block axis is the main flow of the website and inline is the way we read. For example, in English, we read from left to right. So, inline axis is left to right.
+
+Traditional Japanese website is 90 degrees rotated. So, inline axis is top to bottom.
+[Traditional Japanese website](https://huijing.github.io/zh-type/)
+
+There is a CSS property called `writing-mode` whose default value is `horizontal-tb`. It is used to change the direction of the inline axis. It can be changed to `vertical-rl` or `vertical-lr` to change the direction of the inline axis.
+
+## Normal website
+
+![image](/src/assets/2.png)
+
+## Traditional Japanese website
+
+![image](/src/assets/3.png)
+
+## Traditional Mongolian website
+
+![image](/src/assets/4.png)

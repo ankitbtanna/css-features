@@ -5,13 +5,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { CSSFlexComponent } from './css-flex/css-flex.component';
 import { CSSGridComponent } from './css-grid/css-grid.component';
 import { CSSLayoutsComponent } from './css-layouts/css-layouts.component';
-import { IsWhereHasComponent } from './is-where-has/is-where-has.component';
-import { NgModule } from '@angular/core';
 import { CenterLayoutComponent } from './css-layouts/center-layout/center-layout.component';
 import { DeconstructedPancakeComponent } from './css-layouts/deconstructed-pancake/deconstructed-pancake.component';
-import { SidebarSaysComponent } from './css-layouts/sidebar-says/sidebar-says.component';
+import { IsWhereHasComponent } from './is-where-has/is-where-has.component';
+import { LogicalPropertiesComponent } from './logical-properties/logical-properties.component';
+import { NgModule } from '@angular/core';
 import { PancakeStackComponent } from './css-layouts/pancake-stack/pancake-stack.component';
 import { SemanticCssComponent } from './semantic-css/semantic-css.component';
+import { SidebarSaysComponent } from './css-layouts/sidebar-says/sidebar-says.component';
 
 const routes: Routes = [
   { path: 'is-where-has', component: IsWhereHasComponent },
@@ -19,6 +20,7 @@ const routes: Routes = [
   { path: 'css-flex', component: CSSFlexComponent },
   { path: 'css-layouts', component: CSSLayoutsComponent },
   { path: 'semantic-css', component: SemanticCssComponent },
+  { path: 'logical-properties', component: LogicalPropertiesComponent },
 ];
 @NgModule({
   declarations: [
@@ -32,6 +34,7 @@ const routes: Routes = [
     SidebarSaysComponent,
     PancakeStackComponent,
     SemanticCssComponent,
+    LogicalPropertiesComponent,
   ],
   imports: [BrowserModule, RouterModule.forRoot(routes)],
   providers: [],

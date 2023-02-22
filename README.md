@@ -67,4 +67,4 @@ There are 2 axis in a website:
 2. Inline Axis (left to right)
 
 [Read more](https://www.geeksforgeeks.org/css-logical-properties/)
-![image]('./src/assets/1.png')
+![image](/src/assets/1.png)
